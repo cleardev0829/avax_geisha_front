@@ -1,8 +1,8 @@
-import { store } from 'react-notifications-component';
+import { Store } from 'react-notifications-component';
 
 export function toast(type: any, message: string): void {
 
-  store.addNotification({
+  Store.addNotification({
     title: '',
     message,
     type: type,

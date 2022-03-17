@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import useDarkMode from "use-dark-mode";
-import ReactNotification from 'react-notifications-component'
+import {ReactNotifications} from 'react-notifications-component'
 import { Route, Switch, Redirect, BrowserRouter as Router } from 'react-router-dom';
 
 import { Layout } from "./layout/layout";
@@ -32,7 +32,7 @@ function App() {
 
   return (
       <div>
-        <ReactNotification/>
+        <ReactNotifications/>
         <WalletProvider>
           <Router>
             <LoadingOverlayProvider>
